@@ -1,5 +1,6 @@
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.XR.ARFoundation;
 
 public class SpawnerScript : MonoBehaviour
@@ -8,9 +9,10 @@ public class SpawnerScript : MonoBehaviour
 
     public Transform cam;
     public ARSessionOrigin arSessionOrigin;
-
+    private int mushroomNumber;
     public float spawnRange = 10f;
-
+    public GameObject loseText;
+    public Text enemyText;
     private int count = 0;
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,12 @@ public class SpawnerScript : MonoBehaviour
             count = 0;
         }
         count++;
+        mushroomNumber = GameObject.FindGameObjectsWithTag("RedEnemy").Length;
+        enemyText.text = "Enemies (max 100) : " + mushroomNumber.ToString();
+        if (mushroomNumber >= 100)
+        {
+            loseText.SetActive(true);
+        }
     }
 
     public void SpawnEnemy()
