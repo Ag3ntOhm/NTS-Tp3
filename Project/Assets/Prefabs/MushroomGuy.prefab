@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 1030332981}
-  explosionForce: 100
+  explosionForce: 200
   hat: {fileID: 599812213494610820}
 --- !u!1 &8486480504265326285
 GameObject:

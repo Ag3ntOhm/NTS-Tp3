@@ -42,8 +42,8 @@ public class KillingCamera : MonoBehaviour
                 score += 10;
                 text.text = "Score :" + score;
                 //Instantiate(muzzleEffect, new Vector3(-5, 0, 0), Quaternion.identity);
-                //hitObj.GetComponent<MushroomScript>().TakeImpact();
-                Destroy(hitObj);
+                hitObj.GetComponent<MushroomScript>().TakeImpact();
+                //Destroy(hitObj);
             }
             //if (hitObj.CompareTag("BlackEnemy")) {
             //    var clone = Instantiate(bloodEffect, hitObj.transform.position, Quaternion.identity);
