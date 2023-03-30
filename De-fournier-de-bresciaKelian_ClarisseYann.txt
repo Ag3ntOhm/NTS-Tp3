@@ -1,0 +1,7 @@
+C'est un jeu AR où le but est d'avoir le plus haut score.
+
+On dit tirer sur des champignons (ils ont des couteaux)
+Les champignons ne peuvent pas être tués si on touche leur chapeau.
+
+Il y a un affichage du score, en haut à gauche.
+Il y a aussi un bouton de switch d'arme pour avoir un shotgun ou un pistolet.
