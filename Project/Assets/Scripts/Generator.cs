@@ -12,9 +12,12 @@ public class Generator : MonoBehaviour
 
     [SerializeField] public GameObject[] prefabs;
     [SerializeField] public GameObject[] mun;
+    [SerializeField] public GameObject Mushroom;
+
     public int time = 5;
     public int count;
     [SerializeField] private ARPlaneManager ArPlaneManager;
+    
 
     void Awake()
     {
@@ -34,8 +37,6 @@ public class Generator : MonoBehaviour
 
     private void PlaneChanged(ARPlanesChangedEventArgs args)
     {
-        
-
         if (args.added != null)
         {
             var arPlane = args.added[0];
@@ -52,6 +53,11 @@ public class Generator : MonoBehaviour
             var r1 = Random.Range(-arPlane.size.x, arPlane.size.x);
             var r2 = Random.Range(-arPlane.size.y, arPlane.size.y);
             Instantiate(mun[i], arPlane.transform.position + new Vector3(r1, 0, r2),
+                Quaternion.identity);
+            
+            r1 = Random.Range(-arPlane.size.x, arPlane.size.x);
+            r2 = Random.Range(-arPlane.size.y, arPlane.size.y);
+            Instantiate(Mushroom, arPlane.transform.position + new Vector3(r1, 0, r2),
                 Quaternion.identity);
         }
 

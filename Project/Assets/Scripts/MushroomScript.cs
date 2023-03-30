@@ -2,14 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class MushroomScript : MonoBehaviour
 {
     public Rigidbody rb;
     public int explosionForce;
-    GameObject hat;
+    public GameObject hat;
 
     private bool Detatched = false;
 
@@ -26,17 +25,20 @@ public class MushroomScript : MonoBehaviour
 
 
 
-    public void TakeImpact(Vector3 shooterPos)
+    public void TakeImpact()
     {
         Vector3 pos = transform.position;
-        Vector3 explositionPos = pos + (shooterPos - pos) / 10;
+        Vector3 explositionPos = pos + (new Vector3(0,0,0) - pos) / 10;
         rb.AddExplosionForce(explosionForce, explositionPos, 1f);
+        rb.isKinematic = false;
+        hat.GetComponent<Rigidbody>().isKinematic = false;
+
         if (!Detatched)
         {
             hat.transform.DetachChildren();
             Detatched = true;
         }
-
+        
         //Destroy(gameObject);
     }
 }
