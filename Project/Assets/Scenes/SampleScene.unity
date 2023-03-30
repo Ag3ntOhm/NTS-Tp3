@@ -254,7 +254,7 @@ CanvasRenderer:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 99021725}
+ m_GameObject: {fileID: 99021725}
   m_CullTransparentMesh: 1
 --- !u!1 &133682859
 GameObject:
@@ -531,7 +531,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 445858291}
+ m_GameObject: {fileID: 445858291}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 3}
@@ -731,7 +731,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
+ m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
@@ -840,7 +840,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 926070670}
-  m_Enabled: 1
+ m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4966719baa26e4b0e8231a24d9bd491a, type: 3}
   m_Name: 
@@ -1135,7 +1135,7 @@ MonoBehaviour:
 --- !u!1 &1364539214
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
+ m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -1256,7 +1256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2707413585450076968, guid: 9bb7597ad3dc9e742a15438d2acb0724, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -1.994
+     value: -1.994
       objectReference: {fileID: 0}
     - target: {fileID: 2707413585450076968, guid: 9bb7597ad3dc9e742a15438d2acb0724, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
